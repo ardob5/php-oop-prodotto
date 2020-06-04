@@ -20,15 +20,16 @@
           $this -> marca = $marca;
         }
 
-        // public function calcInches(){
-        //   return $this -> sqrt((width * height) / 2.53);
-        // }
+        public function calcInches(){
+          return sqrt(($this-> width * $this-> height) / 2.53);
+        }
 
         public function printMe(){
           echo "ID Prodotto: " . $this -> id . "<br>"
                 . "Larghezza : " . $this -> width . "<br>"
                 . "Altezza : " . $this -> height . "<br>"
-                . "Marca : " . $this -> marca . "<br><br>" ;
+                . "Marca : " . $this -> marca . "<br><br>"
+                . $this -> calcInches();
         }
 
       }
